@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" translatable="false">TP3</string>
+    <string name="enter_pokemon_name">Enter pokemon name:</string>
+    <string name="pikachu" translatable="false">Pikachu</string>
+    <string name="search">SEARCH</string>
+    <string name="exit">EXIT</string>
+</resources>
