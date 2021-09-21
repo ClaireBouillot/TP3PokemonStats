@@ -4,4 +4,5 @@
     <string name="enter_pokemon_name">Saisir le nom du pokémon :</string>
     <string name="search">RECHERCHER</string>
     <string name="exit">QUITTER</string>
+    <string name="go_back">Retour</string>
 </resources>

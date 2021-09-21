@@ -4,4 +4,6 @@
     <string name="pikachu" translatable="false">Pikachu</string>
     <string name="search">SEARCH</string>
     <string name="exit">EXIT</string>
+    <string name="infopokemon" translatable="false">InfoPokemon</string>
+    <string name="go_back">Go Back</string>
 </resources>
