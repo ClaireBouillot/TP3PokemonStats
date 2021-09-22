@@ -3,6 +3,7 @@ package com.example.tp3;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.Log;
@@ -13,9 +14,10 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String APP_TAG = "PokeStats";
     public static String TAG = "MainActivityPokeStats"; // Identifiant pour les messages de log
     private EditText editTextPokemonName;
-
+    String url = "https://www.pokepedia.fr/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +33,12 @@ public class MainActivity extends AppCompatActivity {
     public void OnClick_search(android.view.View v){
         //Log.d("MainActivity", editTextPokemonName.getText().toString());
         Intent intent;
-        intent = new Intent(this, InfoPokemon.class);
+        intent = new Intent(this, PokeRequest.class);
+        //url = url+editTextPokemonName.getText().toString();
+        //Intent intent = new Intent(Intent.ACTION_VIEW);
+        //intent.setData(Uri.parse(url));
         intent.putExtra("inputpokemonname", editTextPokemonName.getText().toString());
         startActivity(intent);
     }
+
 }
